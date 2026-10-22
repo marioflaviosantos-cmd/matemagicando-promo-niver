@@ -1263,7 +1263,9 @@ html:not(.js) .faq__botao {
   .btn:not(.btn--combo) {
     align-self: stretch;
     width: 100%;
-    white-space: normal;
+    /* texto sempre em uma linha: com 100% de largura o respiro lateral
+       pode ser menor (cabe até no cartão roxo de estratégia em 320px) */
+    padding-inline: 16px;
   }
 
   /* a seção de depoimentos não tem lateral (a esteira vai de ponta a ponta) */
