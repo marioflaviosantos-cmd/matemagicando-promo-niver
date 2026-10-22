@@ -86,6 +86,12 @@ strong {
   outline-offset: 3px;
 }
 
+/* botões verdes: sem o contorno escuro de foco (pedido do layout) */
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
+}
+
 /* emoji com a mesma largura do Figma (1em). O emoji do Windows é ~1,37em,
    o que alargava o selo do hero e a barra do topo; o desenho fica centralizado */
 .emoji {
